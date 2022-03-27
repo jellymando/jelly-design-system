@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "dist",
+    "baseUrl": "src"
+  },
+  "includes": ["src"]
+}
