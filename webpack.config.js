@@ -1,9 +1,10 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const { resolve } = require("path");
 
 module.exports = {
   entry: {
-    main: "./src/index.tsx"
+    main: "./src/index.ts"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -29,5 +30,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CleanWebpackPlugin()]
+  plugins: [new CleanWebpackPlugin()],
+  optimization: {
+    minimizer: [new TerserPlugin({ extractComments: false })]
+  }
 };

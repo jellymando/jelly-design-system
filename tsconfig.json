@@ -7,5 +7,6 @@
     "outDir": "dist",
     "baseUrl": "src"
   },
-  "includes": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["stories/*"]
 }
