@@ -1,7 +1,8 @@
 {
   "name": "jelly-design-system",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/jellymando/jelly-design-system.git",
   "author": "jellymando <cicikdi@naver.com>",
   "license": "MIT",
