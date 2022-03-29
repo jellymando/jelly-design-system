@@ -6,6 +6,8 @@
   "author": "jellymando <cicikdi@naver.com>",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@storybook/cli": "^6.4.19",
     "@storybook/react": "^6.4.19",
     "react": "^17.0.2",
