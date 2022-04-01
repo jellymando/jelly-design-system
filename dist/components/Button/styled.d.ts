@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { ColorTheme } from "types";
+import { ColorTheme } from "../../types";
 interface Props {
     color: ColorTheme;
     filled: boolean;

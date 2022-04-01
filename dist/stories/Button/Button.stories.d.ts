@@ -1,7 +1,7 @@
 /// <reference types="react" />
 import { ComponentMeta } from "@storybook/react";
 declare const _default: ComponentMeta<({ type, color, filled, children }: {
-    type?: "submit" | "reset" | "button";
+    type?: "button" | "reset" | "submit";
     color?: import("../../types").ColorTheme;
     filled?: boolean;
     children?: string | JSX.Element;
