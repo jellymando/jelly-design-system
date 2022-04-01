@@ -1,5 +1,5 @@
 import React from "react";
-import { ColorTheme } from "types";
+import { ColorTheme } from "@/types";
 import { ButtonStyle } from "./styled";
 
 const Button = ({

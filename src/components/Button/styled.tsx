@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { ColorTheme } from "types";
-import { COLOR_THEME } from "constants/theme";
-import { FONTSIZE, COLOR } from "constants/style";
+import { ColorTheme } from "@/types";
+import { COLOR_THEME } from "@/constants/theme";
+import { FONTSIZE, COLOR } from "@/constants/style";
 
 interface Props {
   color: ColorTheme;

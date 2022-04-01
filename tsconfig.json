@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    "sourceMap": false,
     "jsx": "react",
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "dist",
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
   },
   "include": ["src/**/*"],
   "exclude": ["stories/*"]

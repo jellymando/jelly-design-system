@@ -8,7 +8,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
-    modules: [resolve(__dirname, "src"), "node_modules"]
+    modules: [resolve(__dirname, "src"), "node_modules"],
+    alias: {
+      "@": resolve(__dirname, "src")
+    }
   },
   output: {
     path: resolve(__dirname, "dist"),
@@ -23,7 +26,10 @@ module.exports = {
         exclude: "/node_modules/",
         loader: "babel-loader"
       },
-      { test: /\.(ts|tsx)$/, loader: "ts-loader" },
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader"
+      },
       {
         test: /\.css$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }]

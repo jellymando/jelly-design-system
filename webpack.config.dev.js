@@ -24,6 +24,9 @@ module.exports = {
       }
     ]
   },
+  alias: {
+    "@": Path.resolve(__dirname, "src")
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",

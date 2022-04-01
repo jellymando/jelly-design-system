@@ -1,5 +1,5 @@
 import { Global } from "@emotion/react";
-import { Reset } from "styles";
+import { Reset } from "@/styles";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
