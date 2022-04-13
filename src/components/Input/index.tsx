@@ -8,10 +8,10 @@ const Input = ({
   color = ColorTheme.Gray,
   size = Size.Medium
 }: {
-  type: React.HTMLInputTypeAttribute;
+  type?: React.HTMLInputTypeAttribute;
   label?: string;
-  color: ColorTheme;
-  size: Size;
+  color?: ColorTheme;
+  size?: Size;
 }) => {
   return (
     <>

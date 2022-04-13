@@ -8,9 +8,9 @@ const Button = ({
   filled = false,
   children
 }: {
-  type: "submit" | "reset" | "button";
-  color: ColorTheme;
-  filled: boolean;
+  type?: "submit" | "reset" | "button";
+  color?: ColorTheme;
+  filled?: boolean;
   children?: string | JSX.Element;
 }) => {
   return (
