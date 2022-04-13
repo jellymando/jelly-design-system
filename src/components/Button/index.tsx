@@ -3,18 +3,18 @@ import { ColorTheme } from "@/types";
 import { ButtonStyle } from "./styled";
 
 const Button = ({
-  type,
-  color = "primary",
+  type = "button",
+  color = ColorTheme.Primary,
   filled = false,
   children
 }: {
-  type?: "submit" | "reset" | "button";
-  color?: ColorTheme;
-  filled?: boolean;
+  type: "submit" | "reset" | "button";
+  color: ColorTheme;
+  filled: boolean;
   children?: string | JSX.Element;
 }) => {
   return (
-    <ButtonStyle type={type || "button"} color={color} filled={filled}>
+    <ButtonStyle type={type} color={color} filled={filled}>
       {children}
     </ButtonStyle>
   );

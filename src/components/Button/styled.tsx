@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { ColorTheme } from "@/types";
-import { COLOR_THEME } from "@/constants/theme";
 import { FONTSIZE, COLOR } from "@/constants/style";
 
 interface Props {
@@ -15,14 +14,14 @@ export const ButtonStyle = styled.button<Props>`
   font-weight: 700;
   color: ${({ color, filled }) =>
     filled
-      ? color === COLOR_THEME.WHITE
+      ? color === ColorTheme.White
         ? "inherit"
         : COLOR.white.default
       : COLOR[color].default};
   background-color: ${({ color, filled }) =>
     filled
       ? COLOR[color].default
-      : color === COLOR_THEME.WHITE
+      : color === ColorTheme.White
       ? "transparent"
       : COLOR.white.default};
   ${({ color, filled }) =>
@@ -33,7 +32,7 @@ export const ButtonStyle = styled.button<Props>`
 
   &:hover:not(:disabled) {
     color: ${({ color }) =>
-      color === COLOR_THEME.WHITE ? "inherit" : COLOR.white.default};
+      color === ColorTheme.White ? "inherit" : COLOR.white.default};
     background-color: ${({ color }) => COLOR[color].default};
   }
 
