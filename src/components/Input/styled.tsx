@@ -14,7 +14,8 @@ export const Label = styled.label`
 
 export const InputStyle = styled.input<Props>`
   width: 100%;
-  height: ${({ sizing }) => (Size.Small ? 40 : Size.Medium ? 50 : 60)}px;
+  height: ${({ sizing }) =>
+    sizing === Size.Small ? 40 : sizing === Size.Medium ? 50 : 60}px;
   font-size: ${FONTSIZE.M};
   border: 1px solid ${({ color }) => COLOR[color].default};
   border-radius: 5px;
