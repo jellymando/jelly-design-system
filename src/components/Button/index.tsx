@@ -1,5 +1,6 @@
 import React from "react";
 import { ColorTheme } from "@/types";
+import { COLOR } from "@/constants/style";
 import { ButtonStyle } from "./styled";
 
 const Button = ({
@@ -9,7 +10,7 @@ const Button = ({
   children
 }: {
   type?: "submit" | "reset" | "button";
-  color?: keyof typeof ColorTheme | ColorTheme;
+  color?: keyof typeof COLOR | ColorTheme;
   filled?: boolean;
   children?: string | JSX.Element;
 }) => {

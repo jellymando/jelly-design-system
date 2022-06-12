@@ -1,5 +1,6 @@
 import React from "react";
 import { ColorTheme, Size } from "@/types";
+import { COLOR } from "@/constants/style";
 import { Label, InputStyle } from "./styled";
 
 const Input = ({
@@ -10,7 +11,7 @@ const Input = ({
 }: {
   type?: React.HTMLInputTypeAttribute;
   label?: string;
-  color?: keyof typeof ColorTheme | ColorTheme;
+  color?: keyof typeof COLOR | ColorTheme;
   size?: Size;
 }) => {
   return (
