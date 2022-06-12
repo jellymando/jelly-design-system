@@ -2,7 +2,7 @@
 import { ColorTheme } from "../../types";
 declare const Button: ({ type, color, filled, children }: {
     type?: "submit" | "reset" | "button";
-    color?: ColorTheme;
+    color?: keyof typeof ColorTheme | ColorTheme;
     filled?: boolean;
     children?: string | JSX.Element;
 }) => JSX.Element;

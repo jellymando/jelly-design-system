@@ -2,7 +2,7 @@
 import { ComponentMeta } from "@storybook/react";
 declare const _default: ComponentMeta<({ type, color, filled, children }: {
     type?: "button" | "reset" | "submit";
-    color?: import("../../types").ColorTheme;
+    color?: import("../../types").ColorTheme | "Primary" | "White" | "Black" | "Gray" | "MellowBlue";
     filled?: boolean;
     children?: string | JSX.Element;
 }) => JSX.Element>;
