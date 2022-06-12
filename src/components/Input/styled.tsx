@@ -3,7 +3,7 @@ import { ColorTheme, Size } from "@/types";
 import { FONTSIZE, COLOR } from "@/constants/style";
 
 interface Props {
-  color: ColorTheme;
+  color: keyof typeof ColorTheme | ColorTheme;
   sizing: Size;
 }
 

@@ -9,7 +9,7 @@ const Button = ({
   children
 }: {
   type?: "submit" | "reset" | "button";
-  color?: ColorTheme;
+  color?: keyof typeof ColorTheme | ColorTheme;
   filled?: boolean;
   children?: string | JSX.Element;
 }) => {

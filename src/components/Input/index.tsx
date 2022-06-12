@@ -10,7 +10,7 @@ const Input = ({
 }: {
   type?: React.HTMLInputTypeAttribute;
   label?: string;
-  color?: ColorTheme;
+  color?: keyof typeof ColorTheme | ColorTheme;
   size?: Size;
 }) => {
   return (
