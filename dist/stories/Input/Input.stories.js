@@ -16,17 +16,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 exports.__esModule = true;
 exports.Primary = void 0;
 var react_1 = __importDefault(require("react"));
-var Button_1 = __importDefault(require("../../components/Button"));
+var Input_1 = __importDefault(require("../../components/Input"));
 exports["default"] = {
-    title: "Button",
-    component: Button_1["default"],
+    title: "Input",
+    component: Input_1["default"],
     argTypes: {
         backgroundColor: { control: "color" }
     }
 };
 var Template = function (args) { return (react_1["default"].createElement(react_1["default"].Fragment, null,
-    react_1["default"].createElement(Button_1["default"], __assign({}, args)))); };
+    react_1["default"].createElement(Input_1["default"], __assign({}, args)))); };
 exports.Primary = Template.bind({});
 exports.Primary.args = {
-    children: "Button"
+    children: "Input"
 };
