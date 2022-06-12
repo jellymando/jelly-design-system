@@ -3,7 +3,7 @@ import { ComponentMeta } from "@storybook/react";
 declare const _default: ComponentMeta<({ type, label, color, size }: {
     type?: React.HTMLInputTypeAttribute;
     label?: string;
-    color?: import("../../types").ColorTheme | "Primary" | "White" | "Black" | "Gray" | "MellowBlue";
+    color?: "black" | "gray" | "white" | import("../../types").ColorTheme | "primary" | "mellowBlue";
     size?: import("../../types").Size;
 }) => JSX.Element>;
 export default _default;

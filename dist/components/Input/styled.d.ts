@@ -1,7 +1,8 @@
 /// <reference types="react" />
 import { ColorTheme, Size } from "../../types";
+import { COLOR } from "../../constants/style";
 interface Props {
-    color: keyof typeof ColorTheme | ColorTheme;
+    color: keyof typeof COLOR | ColorTheme;
     sizing: Size;
 }
 export declare const Label: import("@emotion/styled").StyledComponent<{

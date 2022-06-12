@@ -1,7 +1,8 @@
 /// <reference types="react" />
 import { ColorTheme } from "../../types";
+import { COLOR } from "../../constants/style";
 interface Props {
-    color: keyof typeof ColorTheme | ColorTheme;
+    color: keyof typeof COLOR | ColorTheme;
     filled: boolean;
 }
 export declare const ButtonStyle: import("@emotion/styled").StyledComponent<{
