@@ -7,15 +7,17 @@ const Button = ({
   type = "button",
   color = ColorTheme.Primary,
   filled = false,
+  transition = false,
   children
 }: {
   type?: "submit" | "reset" | "button";
   color?: keyof typeof COLOR | ColorTheme;
   filled?: boolean;
+  transition?: boolean;
   children?: string | JSX.Element;
 }) => {
   return (
-    <ButtonStyle type={type} color={color} filled={filled}>
+    <ButtonStyle type={type} color={color} filled={filled} transition={transition}>
       {children}
     </ButtonStyle>
   );
