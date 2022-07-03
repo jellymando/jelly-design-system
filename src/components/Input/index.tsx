@@ -7,17 +7,19 @@ const Input = ({
   type = "text",
   label,
   color = ColorTheme.Gray,
-  size = Size.Medium
+  size = Size.Medium,
+  onChange = () => {}
 }: {
   type?: React.HTMLInputTypeAttribute;
   label?: string;
   color?: keyof typeof COLOR | ColorTheme;
   size?: Size;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
   return (
     <>
       {label && <Label>{label}</Label>}
-      <InputStyle type={type} color={color} sizing={size} />
+      <InputStyle type={type} color={color} sizing={size} onChange={onChange} />
     </>
   );
 };
