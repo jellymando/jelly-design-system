@@ -7,7 +7,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
-    modules: [resolve(__dirname, "src"), "node_modules"]
+    modules: [resolve(__dirname, "src"), "node_modules"],
+    alias: {
+      "@": resolve(__dirname, "src")
+    }
   },
   externals: ["react", "react-dom"],
   module: {
@@ -23,9 +26,6 @@ module.exports = {
         use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       }
     ]
-  },
-  alias: {
-    "@": Path.resolve(__dirname, "src")
   },
   plugins: [
     new HtmlWebpackPlugin({
