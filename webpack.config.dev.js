@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve } = require("path");
 
 module.exports = {
+  mode: "development",
   entry: {
     main: "./index.js"
   },
@@ -12,7 +13,6 @@ module.exports = {
       "@": resolve(__dirname, "src")
     }
   },
-  externals: ["react", "react-dom"],
   module: {
     rules: [
       {
