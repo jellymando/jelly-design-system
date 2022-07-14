@@ -1,30 +1,40 @@
-import React from "react";
+import React, { RefObject } from "react";
 import { ColorTheme } from "@/types";
 import { COLOR } from "@/constants/style";
 import { ButtonStyle } from "./styled";
 
 const Button = React.forwardRef(
-  ({
-    type = "button",
-    color = ColorTheme.Primary,
-    filled = false,
-    transition = false,
-    onClick = () => {},
-    children
-  }: {
-    type?: "submit" | "reset" | "button";
-    color?: keyof typeof COLOR | ColorTheme;
-    filled?: boolean;
-    transition?: boolean;
-    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-    children?: string | JSX.Element;
-  }) => {
+  (
+    {
+      id,
+      className,
+      type = "button",
+      color = ColorTheme.Primary,
+      filled = false,
+      transition = false,
+      onClick = () => {},
+      children
+    }: {
+      id?: "string";
+      className?: "string";
+      type?: "submit" | "reset" | "button";
+      color?: keyof typeof COLOR | ColorTheme;
+      filled?: boolean;
+      transition?: boolean;
+      onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+      children?: string | JSX.Element;
+    },
+    ref: RefObject<HTMLButtonElement> | null
+  ) => {
     return (
       <ButtonStyle
+        id={id}
+        className={className}
         type={type}
         color={color}
         filled={filled}
         transition={transition}
+        ref={ref}
         onClick={onClick}
       >
         {children}
