@@ -2,17 +2,33 @@ import styled from "@emotion/styled";
 import { ColorTheme, Size } from "@/types";
 import { FONTSIZE, COLOR } from "@/constants/style";
 
-interface Props {
+interface InputProps {
   color: keyof typeof COLOR | ColorTheme;
   sizing: Size;
 }
+
+export const InputWrap = styled.div<{ inline: boolean }>`
+  display: flex;
+  ${({ inline }) =>
+    inline
+      ? `
+        flex-direction: row;
+        align-items: center;
+      `
+      : `
+        flex-direction: column;
+        label {
+          margin-bottom: 5px;
+        }
+      `};
+`;
 
 export const Label = styled.label`
   width: 140px;
   font-size: ${FONTSIZE.M};
 `;
 
-export const InputStyle = styled.input<Props>`
+export const InputStyle = styled.input<InputProps>`
   width: 100%;
   height: ${({ sizing }) =>
     sizing === Size.Small ? 40 : sizing === Size.Medium ? 50 : 60}px;

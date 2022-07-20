@@ -1,7 +1,7 @@
 import React, { forwardRef, RefObject } from "react";
 import { ColorTheme, Size } from "@/types";
 import { COLOR } from "@/constants/style";
-import { Label, InputStyle } from "./styled";
+import { InputWrap, Label, InputStyle } from "./styled";
 
 const Input = forwardRef(
   (
@@ -12,6 +12,7 @@ const Input = forwardRef(
       label,
       color = ColorTheme.Gray,
       size = Size.Medium,
+      inline = false,
       onChange = () => {}
     }: {
       id?: string;
@@ -20,12 +21,13 @@ const Input = forwardRef(
       label?: string;
       color?: keyof typeof COLOR | ColorTheme;
       size?: Size;
+      inline?: boolean;
       onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     },
     ref: React.RefObject<HTMLInputElement> | null
   ) => {
     return (
-      <>
+      <InputWrap inline={inline}>
         {label && <Label>{label}</Label>}
         <InputStyle
           id={id}
@@ -36,7 +38,7 @@ const Input = forwardRef(
           ref={ref}
           onChange={onChange}
         />
-      </>
+      </InputWrap>
     );
   }
 );
