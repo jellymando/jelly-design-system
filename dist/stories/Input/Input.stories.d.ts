@@ -7,6 +7,7 @@ declare const _default: ComponentMeta<React.ForwardRefExoticComponent<{
     label?: string;
     color?: "black" | "gray" | "white" | import("../../types").ColorTheme | "primary" | "mellowBlue";
     size?: import("../../types").Size;
+    inline?: boolean;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 } & React.RefAttributes<HTMLInputElement>>>;
 export default _default;

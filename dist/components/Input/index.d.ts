@@ -8,6 +8,7 @@ declare const Input: React.ForwardRefExoticComponent<{
     label?: string;
     color?: keyof typeof COLOR | ColorTheme;
     size?: Size;
+    inline?: boolean;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 } & React.RefAttributes<HTMLInputElement>>;
 export default Input;

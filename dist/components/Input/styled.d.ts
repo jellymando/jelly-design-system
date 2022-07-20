@@ -1,10 +1,16 @@
 /// <reference types="react" />
 import { ColorTheme, Size } from "../../types";
 import { COLOR } from "../../constants/style";
-interface Props {
+interface InputProps {
     color: keyof typeof COLOR | ColorTheme;
     sizing: Size;
 }
+export declare const InputWrap: import("@emotion/styled").StyledComponent<{
+    theme?: import("@emotion/react").Theme;
+    as?: import("react").ElementType<any>;
+} & {
+    inline: boolean;
+}, import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, {}>;
 export declare const Label: import("@emotion/styled").StyledComponent<{
     theme?: import("@emotion/react").Theme;
     as?: import("react").ElementType<any>;
@@ -12,5 +18,5 @@ export declare const Label: import("@emotion/styled").StyledComponent<{
 export declare const InputStyle: import("@emotion/styled").StyledComponent<{
     theme?: import("@emotion/react").Theme;
     as?: import("react").ElementType<any>;
-} & Props, import("react").DetailedHTMLProps<import("react").InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, {}>;
+} & InputProps, import("react").DetailedHTMLProps<import("react").InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, {}>;
 export {};
