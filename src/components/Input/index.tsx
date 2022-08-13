@@ -9,6 +9,7 @@ const Input = forwardRef(
       id,
       className,
       type = "text",
+      value,
       label,
       color = ColorTheme.Gray,
       size = Size.Medium,
@@ -18,6 +19,7 @@ const Input = forwardRef(
       id?: string;
       className?: string;
       type?: React.HTMLInputTypeAttribute;
+      value?: string;
       label?: string;
       color?: keyof typeof COLOR | ColorTheme;
       size?: Size;
@@ -33,6 +35,7 @@ const Input = forwardRef(
           id={id}
           className={className}
           type={type}
+          value={value}
           color={color}
           sizing={size}
           ref={ref}
