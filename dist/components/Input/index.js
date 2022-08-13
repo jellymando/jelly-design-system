@@ -27,9 +27,9 @@ var react_1 = __importStar(require("react"));
 var types_1 = require("../../types");
 var styled_1 = require("./styled");
 var Input = (0, react_1.forwardRef)(function (_a, ref) {
-    var id = _a.id, className = _a.className, _b = _a.type, type = _b === void 0 ? "text" : _b, label = _a.label, _c = _a.color, color = _c === void 0 ? types_1.ColorTheme.Gray : _c, _d = _a.size, size = _d === void 0 ? types_1.Size.Medium : _d, _e = _a.inline, inline = _e === void 0 ? false : _e, _f = _a.onChange, onChange = _f === void 0 ? function () { } : _f;
+    var id = _a.id, className = _a.className, _b = _a.type, type = _b === void 0 ? "text" : _b, value = _a.value, label = _a.label, _c = _a.color, color = _c === void 0 ? types_1.ColorTheme.Gray : _c, _d = _a.size, size = _d === void 0 ? types_1.Size.Medium : _d, _e = _a.inline, inline = _e === void 0 ? false : _e, _f = _a.onChange, onChange = _f === void 0 ? function () { } : _f;
     return (react_1["default"].createElement(styled_1.InputWrap, { inline: inline },
         label && react_1["default"].createElement(styled_1.Label, null, label),
-        react_1["default"].createElement(styled_1.InputStyle, { id: id, className: className, type: type, color: color, sizing: size, ref: ref, onChange: onChange })));
+        react_1["default"].createElement(styled_1.InputStyle, { id: id, className: className, type: type, value: value, color: color, sizing: size, ref: ref, onChange: onChange })));
 });
 exports["default"] = Input;

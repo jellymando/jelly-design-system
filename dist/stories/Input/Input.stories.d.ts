@@ -4,6 +4,7 @@ declare const _default: ComponentMeta<React.ForwardRefExoticComponent<{
     id?: string;
     className?: string;
     type?: React.HTMLInputTypeAttribute;
+    value?: string;
     label?: string;
     color?: "black" | "gray" | "white" | import("../../types").ColorTheme | "primary" | "mellowBlue";
     size?: import("../../types").Size;

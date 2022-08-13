@@ -5,6 +5,7 @@ declare const Input: React.ForwardRefExoticComponent<{
     id?: string;
     className?: string;
     type?: React.HTMLInputTypeAttribute;
+    value?: string;
     label?: string;
     color?: keyof typeof COLOR | ColorTheme;
     size?: Size;
