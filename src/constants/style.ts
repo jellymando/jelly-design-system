@@ -29,3 +29,11 @@ export const COLOR = {
     active: "#7FC3D4"
   }
 };
+
+export const SIZE = {
+  height: {
+    small: 40,
+    medium: 50,
+    large: 60
+  }
+};

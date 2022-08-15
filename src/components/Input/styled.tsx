@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { ColorTheme, Size } from "@/types";
-import { FONTSIZE, COLOR } from "@/constants/style";
+import { FONTSIZE, COLOR, SIZE } from "@/constants/style";
 
 interface InputProps {
   color: keyof typeof COLOR | ColorTheme;
@@ -31,7 +31,7 @@ export const Label = styled.label`
 export const InputStyle = styled.input<InputProps>`
   width: 100%;
   height: ${({ sizing }) =>
-    sizing === Size.Small ? 40 : sizing === Size.Medium ? 50 : 60}px;
+    SIZE.height[sizing]}px;
   font-size: ${FONTSIZE.M};
   border: 1px solid ${({ color }) => COLOR[color].default};
   border-radius: 5px;

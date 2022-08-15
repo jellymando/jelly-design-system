@@ -1,16 +1,17 @@
 import styled from "@emotion/styled";
-import { ColorTheme } from "@/types";
-import { FONTSIZE, COLOR } from "@/constants/style";
+import { ColorTheme, Size } from "@/types";
+import { FONTSIZE, COLOR, SIZE } from "@/constants/style";
 
 interface Props {
   color: keyof typeof COLOR | ColorTheme;
+  sizing: Size;
   filled: boolean;
   transition: boolean;
 }
 
 export const ButtonStyle = styled.button<Props>`
   width: 100%;
-  height: 50px;
+  height: ${({ sizing }) => SIZE.height[sizing]}px;
   font-size: ${FONTSIZE.M};
   font-weight: 700;
   color: ${({ color, filled }) =>
