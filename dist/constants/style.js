@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.COLOR = exports.FONTSIZE = void 0;
+exports.SIZE = exports.COLOR = exports.FONTSIZE = void 0;
 exports.FONTSIZE = {
     XS: "1.2rem",
     S: "1.4rem",
@@ -29,5 +29,12 @@ exports.COLOR = {
     mellowBlue: {
         "default": "#8fdbee",
         active: "#7FC3D4"
+    }
+};
+exports.SIZE = {
+    height: {
+        small: 40,
+        medium: 50,
+        large: 60
     }
 };

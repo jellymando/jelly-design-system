@@ -11,7 +11,10 @@ exports.ButtonStyle = void 0;
 var styled_1 = __importDefault(require("@emotion/styled"));
 var types_1 = require("../../types");
 var style_1 = require("../../constants/style");
-exports.ButtonStyle = styled_1["default"].button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  width: 100%;\n  height: 50px;\n  font-size: ", ";\n  font-weight: 700;\n  color: ", ";\n  background-color: ", ";\n  ", "\n  border-radius: 5px;\n  cursor: pointer;\n\n  ", "\n\n  &:disabled {\n    opacity: 0.9;\n    cursor: default;\n  }\n"], ["\n  width: 100%;\n  height: 50px;\n  font-size: ", ";\n  font-weight: 700;\n  color: ", ";\n  background-color: ", ";\n  ", "\n  border-radius: 5px;\n  cursor: pointer;\n\n  ", "\n\n  &:disabled {\n    opacity: 0.9;\n    cursor: default;\n  }\n"])), style_1.FONTSIZE.M, function (_a) {
+exports.ButtonStyle = styled_1["default"].button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  width: 100%;\n  height: ", "px;\n  font-size: ", ";\n  font-weight: 700;\n  color: ", ";\n  background-color: ", ";\n  ", "\n  border-radius: 5px;\n  cursor: pointer;\n\n  ", "\n\n  &:disabled {\n    opacity: 0.9;\n    cursor: default;\n  }\n"], ["\n  width: 100%;\n  height: ", "px;\n  font-size: ", ";\n  font-weight: 700;\n  color: ", ";\n  background-color: ", ";\n  ", "\n  border-radius: 5px;\n  cursor: pointer;\n\n  ", "\n\n  &:disabled {\n    opacity: 0.9;\n    cursor: default;\n  }\n"])), function (_a) {
+    var sizing = _a.sizing;
+    return style_1.SIZE.height[sizing];
+}, style_1.FONTSIZE.M, function (_a) {
     var color = _a.color, filled = _a.filled;
     return filled
         ? color === types_1.ColorTheme.White

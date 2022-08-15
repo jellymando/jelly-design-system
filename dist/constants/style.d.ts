@@ -28,3 +28,10 @@ export declare const COLOR: {
         active: string;
     };
 };
+export declare const SIZE: {
+    height: {
+        small: number;
+        medium: number;
+        large: number;
+    };
+};

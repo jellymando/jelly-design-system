@@ -5,6 +5,7 @@ declare const _default: ComponentMeta<React.ForwardRefExoticComponent<{
     className?: "string";
     type?: "button" | "reset" | "submit";
     color?: "black" | "gray" | "white" | import("../../types").ColorTheme | "primary" | "mellowBlue";
+    size?: import("../../types").Size;
     filled?: boolean;
     transition?: boolean;
     onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;

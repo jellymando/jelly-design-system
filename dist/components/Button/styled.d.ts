@@ -1,8 +1,9 @@
 /// <reference types="react" />
-import { ColorTheme } from "../../types";
+import { ColorTheme, Size } from "../../types";
 import { COLOR } from "../../constants/style";
 interface Props {
     color: keyof typeof COLOR | ColorTheme;
+    sizing: Size;
     filled: boolean;
     transition: boolean;
 }
